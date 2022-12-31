@@ -1,57 +1,15 @@
-/* eslint-disable */
-const TEMPLATE_CONFIG = [
-  {
-    id: '0001',
-    title: '亲爱的, 早上好',
-    desc: `
-      **{{date.DATA}}**
-      
-      下个休息日：{{holidaytts.DATA}}
-      
-      ---
-      
-      城市：{{city.DATA}}
-      
-      天气：{{weather.DATA}}
-      
-      气温(最高/最低):{{max_temperature.DATA}} / {{min_temperature.DATA}}
-      
-      风向: {{wind_direction.DATA}}
-      
-      风级: {{wind_scale.DATA}}
-      
-      {{comprehensive_horoscope.DATA}}
-      
-      ---
-      
-      今天是我们相识的第{{love_day.DATA}}天
-      
-      {{birthday_message.DATA}}
-      
-      ---
-      
-      {{moment_copyrighting.DATA}}
-      
-      {{poetry_title.DATA}} {{poetry_content.DATA}}
-    `
-  },
-  {
-    id: '0002',
-    title: '推送完成提醒',
-    desc: `
-      服务器信息：{{post_time_zone.DATA}} {{post_time.DATA}}
-      
-      ---
-      
-      共推送 {{need_post_num.DATA}} 人
-      
-      成功: {{success_post_num.DATA}} | 失败: {{fail_post_num.DATA}}
-      
-      成功用户: {{success_post_ids.DATA}}
-      
-      失败用户: {{fail_post_ids.DATA}}
-    `
-  },
-]
-
-module.exports = TEMPLATE_CONFIG
+今天是{{date.DATA}} ，每天都比昨天更爱你💗 
+🏡地区：{{region.DATA}} 
+☀天气：{{weather.DATA}} 
+❄最低气温：{{min_temp.DATA}} 
+🌞最高气温：{{max_temp.DATA}} 
+🤍当前气温：{{temp.DATA}} 
+🌬当前风向：{{wind_dir.DATA}}
+⚠pm2.5值：{{pm2p5.DATA}} 
+⚡空气质量：{{category.DATA}}
+🌤日出时间：{{sunrise.DATA}} 
+🌜日落时间：{{sunset.DATA}}
+👩‍❤️‍👩今天是我们相识的第{{love_day.DATA}}天 🎉🎊 
+👩‍🎨{{birthday1.DATA}} ♊ 
+👩‍⚕️{{birthday2.DATA}} ♈ 
+❤🧡今日建议：{{proposal.DATA}} {{chp.DATA}} {{note_en.DATA}} {{note_ch.DATA}}
