@@ -1,67 +1,29 @@
-/* eslint-disable */
+{
+# 公众号配置
+# 公众号appId
+"app_id": "wxe2c277e3b3eb8794",
+# 公众号appSecret
+"app_secret": "de09f6bfe852e0d30c89b6364b968283",
+# 模板消息id
+"template_id": "Smqn3LpqPX6fHwdAYA5uTcdUDDrhOrCpT76Rez1MN5I",
+# 接收公众号消息的微信号，如果有多个，需要在[]里用英文逗号间隔，例如["wx1", "wx2"]
+"user": ["ozhRR5w0THeh6ZIwdGa53_0VG8SA","ozhRR5zlnJjC-_UYq_0vTLWoMj6g"],
 
-/**
- * 此项目配置为方便新人使用，已缩减至最简配置。
- * 如若想使用更多功能，请查考文档中的 【3. config参数说明】 
- * 自行添加属性，以支持更多个性化功能
- */
-const USER_CONFIG = {
-
-  // 使用微信测试号：公众号APP_ID
-  APP_ID: '',
-
-  // 使用微信测试号：公众号APP_SECRET
-  APP_SECRET: '',
-
-  PROVINCE: '广东',
-  CITY: '惠州',
-
-  USERS: [
-    {
-      // 想要发送的人的名字
-      name: '宝贝',
-      // 使用微信测试号：扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
-      // 使用微信测试号：你想对他发送的模板消息的模板ID
-      useTemplateId: '',
-      // 新历生日, 仅用作获取星座运势, 格式必须为MM-DD
-      horoscopeDate: '12-27',
-      festivals: [
-        // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
-        {
-          type: '*生日', name: '宝贝', year: '1996', date: '09-09',
-        },
-        // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
-        {
-          type: '生日', name: '李四', year: '1996', date: '09-31',
-        },
-        {
-          type: '节日', name: '相识纪念日', year: '2020', date: '09-03',
-        },
-      ],
-      // 我们在一起已经有xxxx天了的配置
-      customizedDateList: [
-        // 在一起的日子
-        { keyword: 'love_day', date: '2022-09-08' },
-        // 结婚纪念日
-        { keyword: 'marry_day', date: '2022-09-09' },
-      ],
-    },
-  ],
-
-
-  // 【推送完成提醒】模板id, 用来看自己有没有发送成功的那个模板
-  CALLBACK_TEMPLATE_ID: '',
-
-  CALLBACK_USERS: [
-    {
-      name: '自己',
-      // 使用微信测试号：自己的微信id，扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: '',
-    }
-  ],
-
+# 信息配置
+# 和风天气apikey
+"weather_key": "a1088c24bdb344df9f45a46a1db8667c",
+# 天行数据apikey
+"tian_api": "c9ebad6142244bdad8b4b8f1de9b7860",
+# 所在地区，可为省，城市，区，县，同时支持国外城市，例如伦敦(国外城市可能获取不到pm2.5，空气质量，今日建议等数据)
+"region": "莱山",
+# 生日1
+"birthday1": {"name": "佳佳", "birthday": "r2002-05-10"},
+# 生日2
+"birthday2": {"name": "倩倩", "birthday": "r2003-03-02"},
+# 在一起的日子，格式同上
+"love_date": "2021-10-28",
+# 金句中文，如果为空，默认会读取金山的每日金句
+"note_ch": "",
+# 金句英文
+"note_en": ""
 }
-
-module.exports = USER_CONFIG
-
